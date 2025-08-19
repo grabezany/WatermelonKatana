@@ -422,3 +422,56 @@ input[type=checkbox]:checked+.checkbox::after {
 	border-radius: 50%;
 	display: inline-flex;
 }
+
+/*Stuff added by gabriel below*/
+.project-thumbnail {
+	max-width: 190px;
+	max-height: 190px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.project-panel {
+	max-width: 190px;
+	max-height: 190px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.thumbnail-border {
+	background-image: linear-gradient(to right, pink, lightgreen);
+	min-width: 200px;
+	min-height: 200px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px pink;
+	transition: box-shadow 0.3s;
+	display: flex;
+	align-items: center;
+}
+.panel-overlay {
+    position: absolute;
+    background-color: rgb(0,0,0,0);
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 99;
+}
+.project-panel:hover .panel-overlay{
+    background-color: rgb(0,0,0,0.6);
+}
+.project-panel:hover .project-link{
+    color: rgb(255,255,255,1);
+}
+.project-panel:hover .author-link{
+    color: rgb(255, 192, 203, 1);
+}
+
+.project-link {
+    color: rgb(0,0,0,0);
+    text-align: center;
+}
+.author-link {
+    color: rgb(255, 192, 203, 0);
+    transition: color 0.3s;
+}
